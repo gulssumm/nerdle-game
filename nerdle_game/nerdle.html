@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NERDLE Game</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+
+  <!-- NERDLE Game Section -->
+  <section id="nerdle-game">
+    <h2>NERDLE Game</h2>
+    <div id="entry-section">
+      <div class="entry-widget">
+        <input type="text" id="equation-entry" placeholder="Enter your equation">
+      </div>
+      <button id="control-button">Check</button>
+    </div>
+    <div id="grid-container">
+      <!-- Grid with 6x8 inputs -->
+      <form id="grid-form">
+        <!-- Use nested loops to generate inputs for the grid -->
+        <div class="row">
+          <!-- Outer loop for rows -->
+          <div class="col">
+            <!-- Inner loop for columns -->
+            <!-- Use unique IDs for each input -->
+            <!-- Example: <input type="text" id="cell-0-0" class="grid-cell" maxlength="1" required> -->
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Button grid for entering equations -->
+    <div id="equation-buttons">
+      <!-- Row 1 -->
+      <div class="button-row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+      </div>
+      <!-- Row 2 -->
+      <div class="button-row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+      </div>
+      <!-- Row 3 -->
+      <div class="button-row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>*</button>
+      </div>
+      <!-- Row 4 -->
+      <div class="button-row">
+        <button>0</button>
+        <button>/</button>
+        <button>=</button>
+        <button id="enter">Enter</button>
+        <button id="delete">Delete</button>
+      </div>
+      <!-- Additional buttons if needed -->
+    </div>
+    <div id="guesses"></div>
+    <div id="success-message"></div>
+    <!-- Remove the check button -->
+    <div id="character-states">
+      <!-- Character states will be dynamically updated here -->
+    </div>
+    <div id="message"></div> <!-- To display win/lose message -->
+  </section>
+
+  <script src="nerdle.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

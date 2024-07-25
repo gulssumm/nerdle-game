@@ -1,0 +1,46 @@
+/* Set the width and height of each grid cell */
+.grid-cell {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Equal to width to make it a square */
+    text-align: center; /* Center the text horizontally */
+    font-size: 1.2em; /* Adjust font size as needed */
+  }
+  
+  /* Ensure the inputs are displayed inline */
+  .row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of cells to keep them in the same row */
+  }
+  
+  /* Add spacing between cells */
+  .col {
+    margin-right: 5px; /* Adjust spacing as needed */
+  }
+  
+  /* Remove margin from last cell in a row */
+  .col:last-child {
+    margin-right: 0;
+  }
+
+  .grid-cell.correct {
+    background-color: green;
+  }
+  
+  .grid-cell.wrongSpot {
+    background-color: purple;
+  }
+  
+  .grid-cell.wrong {
+    background-color: black;
+  }
+  
+  .grid-cell.invalid{
+    background-color: blueviolet;
+  }
+  .green {
+    background-color: green;
+    /* Add any additional styling for green buttons */
+  }
+  .purple{
+    background-color: purple;
+  } 
